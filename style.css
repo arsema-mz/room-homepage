@@ -1,0 +1,632 @@
+.body {                           
+    font-family: "League Spartan", sans-serif;     
+    display: flex;  
+    flex-wrap: wrap;                  
+    align-items: center;              
+    justify-content: center; 
+    height: 100%; 
+                  
+}
+.maxbox {
+    margin-top: 50px;
+    max-width: 1440px;
+    width: 100%;
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;  
+}
+img {
+    width: 430px;
+    height: 280px;  
+}
+
+.arrowleft,.arrowright {
+    background-color: black;
+    border: none;
+    width: 80px;
+    height: 70px;
+    cursor: pointer;
+
+}
+
+.arrow {
+    width: 157px;
+    height: 70px;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    border: none;
+    position: absolute;
+
+}
+.topbox {
+    display: flex;
+    width: 100%; 
+    height: 550px;
+    align-items:center;
+    margin: 0;
+    border: none;
+}
+
+.topbox1 {
+    width: 860px; 
+    height: 550px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.6s ease;
+    background-repeat: no-repeat;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topbox2 {
+    width:450px; 
+    padding: 70px;
+    height: 410px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    margin-top: 0;
+
+}
+.contentSlide {
+    display: none;
+    margin-top: 0;
+    padding-left: 25px; 
+    padding-right: 0;
+}
+.contentSlide:first-child {
+    display: block; 
+}
+.bottombox {
+    width:100%;
+    height:390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    border: none;
+    margin: none;
+
+}
+.bottombox2 {
+    width: 490px; 
+    height: 180px; 
+    background-color: hsl(0, 0%, 100%);
+    padding: 50px;
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+
+    
+}
+#unique {
+    display: none;
+}
+#close {
+    display: none;
+}
+
+
+
+#room {
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+.allbutton {
+    width: 250px;
+    height: 25px;
+    display: flex;
+    margin-top:50px;
+    margin-left: 30px;
+    background-color: transparent;
+
+
+}
+
+.buttons {
+    text-decoration: none;
+    color:white;
+    font-size: 0.9rem;         
+    text-align: right;   
+    padding: 10px 20px;   
+    border: none;
+    font-weight: bold;
+    background-color:transparent;
+    
+}
+
+
+p {
+    
+    font-size: 17px; 
+    color: hsl(0, 0%, 63%);
+    font-weight: 470;
+    line-height: 1.4;
+    font-family: "League Spartan", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 38px; 
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "League Spartan", sans-serif;
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "League Spartan", sans-serif;
+
+}
+h3 {
+        margin: 0;
+        font-size: 17px;
+        letter-spacing: 3px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "League Spartan", sans-serif;
+    
+    
+}
+.hidden-element {
+    display: block; 
+}
+
+
+@media (max-width: 375px) {
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; 
+        margin: 0;
+    }
+    .maxbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        height: 100%;
+        width: 330px;
+    }
+    .topbox, .bottombox {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topbox1 {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        margin-top: 0;
+        align-items: flex-start;
+        justify-content:space-between;
+        display: flex;
+        flex-direction: row;
+        width: 375px;
+        height: 350px;
+
+        
+    }
+    
+    .buttons {
+        font-size: 16px;
+    }
+    
+
+     .topbox2, .bottombox2 {
+        width: 90%; 
+        text-align: justify;
+        padding:40px;
+        margin-left: px;
+        margin-right: 10px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column
+    }
+
+    img {
+        width: 100%; 
+        height: auto; 
+        object-fit:cover;
+        margin: 0;
+        margin-left: 0;
+        padding: 0;
+        margin-right: 0;
+    
+    }
+
+    p {
+        margin-top:  8px; 
+        padding: 0; 
+        font-size: 12px;
+        overflow-wrap: break-word; 
+        word-wrap: break-word; 
+    }
+    h1 {
+        font-size: 26px;
+        font-weight: 700;
+    }
+    
+
+    
+    .arrow {
+    
+        width: 130px;
+        height: auto;
+        margin-top: 0;
+        margin-right: 0;
+        position: relative;
+        margin: 18px;
+    
+    
+    
+    }
+    #unique{
+        display: block;
+        margin-top: 57px;
+        margin-left: 70px;
+    
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    
+    #nav {
+        background-color: white;
+        color: black;
+        width: 100%;
+        height: 155px;
+        align-items: center;
+        margin: 0;
+        display: none;
+        flex-direction: row; /* Horizontal layout */
+        position: fixed;
+        z-index: 99; /* Above backdrop */
+    }
+    
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none; /* Hidden by default */
+        z-index: 98; /* Just below the nav */
+    }
+    
+    .allbutton {
+        display: flex; /* Align links horizontally */
+        justify-content: flex-end; /* Space links evenly */
+        padding: 10px;
+        background-color: white;
+    }
+    .allbutton a {
+        color:black; /* Link color */
+        text-decoration: none; /* Remove underline */
+        padding: 15px; /* Padding for better click area */
+        z-index: 100;
+        margin-top: 70px;
+    }
+    
+    #close {
+        display: none; 
+        cursor: pointer;
+        color: black;
+        z-index: 100;
+        margin-top: 86px;
+        margin-left: 32px;
+        position: absolute;
+    }
+    
+    #nav.show {
+        display: block; /* Show nav when class is added */
+    }
+    
+    #close.show {
+        display: block; 
+    }
+    
+    #unique.show {
+        display: none; 
+    }
+    
+    body.blur {
+        overflow: hidden; /* Prevent scrolling when nav is open */
+    }
+    }
+
+
+@media (min-width: 376px) and (max-width: 768px) {
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; 
+        margin-top:  0;
+        margin-left:  0;
+    }
+    .maxbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-left:  0;
+        margin-top: 0;
+    }
+
+    .topbox, .bottombox {
+        width: 100%; 
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .topbox1 {
+        width: 100%;
+        height: 400px;
+
+        
+    }
+    .bottombox2 {
+        margin-left: 40px;
+    }
+    
+    
+
+    .topbox2, .bottombox2 {
+        width: 85%; 
+        padding: 50px;
+        height: auto;
+        display: flex;
+        text-align: left; 
+        flex-direction: column;
+        position: relative; 
+        text-align: justify;
+    
+    }
+    .allbutton {
+        width: 190px;
+        height: 25px;
+        display:flex;
+        margin-top:50px;
+        background-color: transparent;
+    
+    }
+    .navbar {
+
+
+    }
+    
+
+    img {
+        width: 100%;
+        height: auto; 
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 0; 
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        line-height: 1.5;
+    }
+    h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    
+    
+    
+
+
+    .svg-icon {
+        padding: 0;
+        margin-left: 0;
+        width: 90px; 
+        height: auto;
+    }
+    
+
+    .arrow {
+        bottom: 0px; 
+        right: 0px;
+        width: 130px;
+        height: 70px;
+        position: relative; 
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; 
+        margin: 0; /* Combined margin properties */
+    }
+
+    .maxbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Changed to auto for better flexibility */
+        margin-top: 0 ; /* Horizontal margin */
+    }
+
+    .topbox2, .bottombox2 {
+        width: 100%; 
+        padding: 20px; /* Reduced padding for better responsiveness */
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items in the column */
+        text-align: justify;
+    }
+
+    .topbox, .bottombox {
+        width: 100%; 
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+        flex-wrap: wrap; /* Allow items to wrap for better responsiveness */
+    }
+
+    .topbox1 {
+        width: 100%;
+        height: 430px; /* Set a minimum height */
+        display: flex; /* Use flex to center content if needed */
+        justify-content: flex-start; /* Center content vertically */
+
+    
+    }
+
+    .bottombox2 {
+        margin: 20px; /* Added margin for spacing */
+        width: calc(100% - 40px); /* Responsive width considering margins */
+    }
+
+    img {
+        width: 100%; /* Make images responsive */
+        max-width: 75%; /* Maintain a maximum width */
+        height: auto; 
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+   
+    .arrow {
+        bottom: 0px; 
+        right: 0px;
+        width: 175px;
+        height:80px;
+        position: relative; 
+        margin-top:25px;
+    }
+    p {
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 0; 
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        line-height: 1.5;
+    }
+    h1 {
+        font-size: 50px;
+        margin: 10px;
+        font-weight: 648;
+    }
+    h2 {
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 29px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 290px) {
+    .body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .maxbox {
+        width: 90%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .topbox1 {
+        flex-direction: column;
+        height: 230px;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .buttons {
+        font-size: 12px;
+    
+ }
+    #nav {
+        flex-direction: column;
+        padding: 5px;
+        height: auto;
+    }
+
+    .allbutton {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .allbutton a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    #close {
+        margin-top: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .arrow {
+     height: 45px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    
+}
